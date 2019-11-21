@@ -1,27 +1,17 @@
 package liskov;
 
-public class Rectangle {
+public class Rectangle implements Shape{
 
     private double length;
     private double width;
 
-    public void setLength(double length) {
+    public Rectangle(double length, double width) {
         this.length = length;
-    }
-
-    public void setWidth(double width) {
         this.width = width;
     }
 
-    public double area(){
+    @Override
+    public double getArea() {
         return length * width;
-    }
-
-    public double getLength() {
-        return length;
-    }
-
-    public double getWidth() {
-        return width;
     }
 }

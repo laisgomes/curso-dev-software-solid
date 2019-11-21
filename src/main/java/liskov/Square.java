@@ -1,17 +1,15 @@
 package liskov;
 
-public class Square extends Rectangle {
+public class Square implements Shape {
 
-    @Override
-    public void setLength(double length){
-        super.setLength(length);
-        super.setWidth(length);
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
     }
 
     @Override
-    public void setWidth(double width) {
-        super.setLength(width);
-        super.setWidth(width);
+    public double getArea() {
+        return side * side;
     }
-
 }

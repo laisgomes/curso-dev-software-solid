@@ -1,6 +1,6 @@
 package nonComplain;
 
-public class Triangle {
+public class Triangle implements Shape {
 
     private double sizeA;
     private double sizeB;

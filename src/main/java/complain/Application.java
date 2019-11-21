@@ -1,6 +1,7 @@
 package complain;
 
 import nonComplain.Ellipse;
+import nonComplain.Shape;
 import nonComplain.Triangle;
 
 public class Application {
@@ -8,19 +9,13 @@ public class Application {
         Triangle triangle = new Triangle(3,7,9);
         Ellipse ellipse = new Ellipse(10, 20);
 
-        printTriangle(triangle);
-        printEllipse(ellipse);
+        printShape(triangle);
+        printShape(ellipse);
     }
 
-
-    private static void printTriangle(Triangle triangle) {
-        System.out.println(triangle.area());
-        System.out.println(triangle.perimeter());
-    }
-
-    private static void printEllipse(Ellipse ellipse) {
-        System.out.println(ellipse.area());
-        System.out.println(ellipse.perimeter());
+    private static void printShape(Shape shape) {
+        System.out.println(shape.area());
+        System.out.println(shape.perimeter());
     }
 
 }

@@ -1,6 +1,6 @@
 package nonComplain;
 
-public class Ellipse {
+public class Ellipse implements Shape {
 
     private double sizeA;
     private double sizeB;
